@@ -5,7 +5,7 @@
   tasks:
   - name: Copy Jar to S3 Bucket
     command: >
-        aws s3 cp /root/my-app-1.0-SNAPSHOT.jar s3://jarbucket2402/my-app-1.0-SNAPSHOT.jar
+        aws s3 cp ./my-app-1.0-SNAPSHOT.jar s3://jarbucket2402/my-app-1.0-SNAPSHOT.jar
         --region us-east-1
     register: s3_upload
 
